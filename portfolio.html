@@ -1,239 +1,181 @@
 <!doctype html>
-<html class="no-js" lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/foundation.min.css">
-    <link rel="stylesheet" href="css/photoswipe.css"> 
-    <link rel="stylesheet" href="css/default-skin.css"> 
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/font-css/LineIcons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="css/tailwind.css" rel="stylesheet">
+    <link href="css/photoswipe.css" rel="stylesheet">
+    <link href="css/default-skin.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <div class="grid-container main-container">
-      <div class="grid-x">
-        <div class="large-3 cell sidebar">
-          <div class="profile-pic">
-            <div class="box">
-              <img src="img/profile.jpg" alt="Profile Picture" />
-            </div>
-          </div>
-          <h3 id="name">FAHRURRAZI</h3>
-          <ul class="side-menu">
-            <li><a href="index.html"><i class="fa fa-briefcase" aria-hidden="true"></i>Experience //</a></li>
-            <li class="active"><a href="portfolio.html"><i class="fa fa-briefcase" aria-hidden="true"></i>Portfolio //</a></li>
-            <li><a href="about.html""><i class="fa fa-address-card" aria-hidden="true"></i>About //</a></li>
-          </ul>
+</head>
+<body class="font-sans">
+    <div class="container mr-auto ml-auto py-10">
+        <div class="flex justify-center items-start">
+            <a href="index.html" class="flex-grow-0 w-20 mt-2 text-blue-400">&laquo; Back</a>
+            <h3 class="flex-grow mb-20 text-center text-4xl text-gray-600 font-extralight">portfolio</h3>
+            <a href="resume.html" class="flex-grow-0 w-20 text-blue-400">&raquo; Resume</a>
         </div>
-        <div class="large-9 cell main-article">
-          <div class="timeline-title">
-            <span>
-              <i class="fa fa-briefcase" aria-hidden="true"></i>Portfolio //
-            </span>
-          </div>
-          <ul class="timeline-list">
-            <li>
-              <h3 class="title"><a target="_blank" href="https://guarded-depths-03538.herokuapp.com/">Task Manager</a></h3>
-              <p>This is my small pet project, i create the project to understand Laravel and experiment with React JS</p>
-              <p>The idea is to help user track the Task of his company. So, manager can monitor when the Task is created and
-                the due date.
-              </p>
-              <p><a target="_blank" href="https://github.com/fahrurben/taskman-react">React Source link</a></p>
-              <p><a target="_blank" href="https://guarded-depths-03538.herokuapp.com">Application link</a></p>
-              <p><a target="_blank" href="https://guarded-depths-03538.herokuapp.com/register">Registration link</a></p>
-              <p><strong>Existing account, email: admin@test.com password: admin</strong></p>
-              <p><a id="showInvoice" href="javascript:;">Show/Hide Gallery</a></p>
-              <div id="invoice-me-gallery" class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+        <div class="flex px-20 gap-x-16">
+            <ul class="mt-8">
 
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="/img/taskman/desktop-1.png" itemprop="contentUrl" data-size="1024x570">
-                        <img src="/img/taskman/desktop-1.png" itemprop="thumbnail" alt="Image description" />
-                    </a>
-                    <figcaption itemprop="caption description">Screenshot 1</figcaption>
-                </figure>
+                <li class="relative mb-14 pl-10">
+                    <i class="absolute -left-2 w-4 h-4 rounded-lg bg-green-200"></i>
+                    <p class="block text-sm text-gray-600 font-bold mt-4">Sharing Book App</p>
+                    <p class="block text-sm text-gray-600 mt-2">
+                        This project is my idea for peer to peer sharing book app.
+                        So, the user of this app can borrow book from other, and when user lend his book it will add point.
+                        Otherwise when user borrowed someone else book, it will reduce the point.
+                        This project build with Laravel, React, and Tailwind CSS.
+                    </p>
+                    <p class="block text-sm text-gray-600 mt-2">
+                        The project can be access on link bellow. The user credentials, username: test@test.com, password: test
+                        or you can register by yourself.
+                    </p>
+                    <p class="block text-sm text-gray-600 mt-2"><a target="_blank" class="text-blue-600" href="https://secret-lowlands-89893.herokuapp.com/">Sharing Book App Link</a></p>
+                </li>
 
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                  <a href="/img/taskman/desktop-2.png" itemprop="contentUrl" data-size="1024x570">
-                      <img src="/img/taskman/desktop-2.png" itemprop="thumbnail" alt="Image description" />
-                  </a>
-                  <figcaption itemprop="caption description">Screenshot 2</figcaption>
-                </figure>
+                <li class="relative mb-14 pl-10">
+                    <i class="absolute -left-2 w-4 h-4 rounded-lg bg-green-200"></i>
+                    <p class="block text-sm text-gray-600 font-bold mt-4">Health Web/Mobile Application for 12u12 Sdn Bhd</p>
+                    <p class="block text-sm text-gray-600 mt-2"></p>
+                    <p class="block text-sm text-gray-600 mt-2">
+                        Build frontend of Health Application that launch by startup 12u12 Sdn Bhd.
+                    </p>
+                    <p class="block text-sm text-gray-600 mt-2">
+                        Technology used: <strong>ReactJS, ES6, Redux</strong>
+                    </p>
+                    <p>
+                        <a id="show12u12" href="javascript:;" class="text-blue-600 text-sm">Show/Hide Gallery</a>
+                    </p>
+                    <div id="my-gallery" class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                  <a href="/img/taskman/desktop-3.png" itemprop="contentUrl" data-size="1024x570">
-                      <img src="/img/taskman/desktop-3.png" itemprop="thumbnail" alt="Image description" />
-                  </a>
-                  <figcaption itemprop="caption description">Screenshot 3</figcaption>
-                </figure>
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/portfolio/12u12-login.jpg" itemprop="contentUrl" data-size="400x450">
+                                <img src="img/portfolio/12u12-login.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Login Page</figcaption>
+                        </figure>
 
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                  <a href="/img/taskman/desktop-4.png" itemprop="contentUrl" data-size="1024x570">
-                      <img src="/img/taskman/desktop-4.png" itemprop="thumbnail" alt="Image description" />
-                  </a>
-                  <figcaption itemprop="caption description">Screenshot 4</figcaption>
-                </figure>
-                
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                  <a href="/img/taskman/desktop-5.png" itemprop="contentUrl" data-size="1024x570">
-                      <img src="/img/taskman/desktop-5.png" itemprop="thumbnail" alt="Image description" />
-                  </a>
-                  <figcaption itemprop="caption description">Screenshot 5</figcaption>
-                </figure>
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/portfolio/12u12-signup.jpg" itemprop="contentUrl" data-size="400x680">
+                                <img src="img/portfolio/12u12-signup.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Signup Page</figcaption>
+                        </figure>
 
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                  <a href="/img/taskman/desktop-6.png" itemprop="contentUrl" data-size="1024x570">
-                      <img src="/img/taskman/desktop-6.png" itemprop="thumbnail" alt="Image description" />
-                  </a>
-                  <figcaption itemprop="caption description">Screenshot 6</figcaption>
-                </figure>
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/portfolio/12u12-forgot-password.jpg" itemprop="contentUrl" data-size="400x300">
+                                <img src="img/portfolio/12u12-forgot-password.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Forgot Password</figcaption>
+                        </figure>
 
-              </div>
-            </li>
-            <li>
-              <h3 class="title"><a target="_blank" href="https://protected-retreat-56010.herokuapp.com/">KRS Online</a></h3>
-              <p>University management application, helping university to manager their student, class, and score. 
-                University can manage the class that will opening and student can submit their study plan.
-              </p>
-              <p><a target="_blank" href="https://protected-retreat-56010.herokuapp.com/">Application link</a></p>
-              <p><strong>Login, email: test@test.com password: test</strong></p>
-            </li> 
-            <li class="clearfix">
-                <h3 class="title">Health Web/Mobile Application for 12u12 Sdn Bhd</h3>
-                <p>
-                  Build frontend of Health Application that launch by startup 12u12 Sdn Bhd. 
-                </p>
-                <p>
-                  Technology used: <strong>ReactJS, ES6, Redux</strong>
-                </p>
-                <p>
-                  Click the gallery of the apps. The gallery just contain some pages of Application.
-                  Not full implementation of application.
-                  <a id="show12u12" href="javascript:;">Show/Hide Gallery</a>
-                </p>
-                <div id="my-gallery" class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/portfolio/12u12-profile.jpg" itemprop="contentUrl" data-size="400x450">
+                                <img src="img/portfolio/12u12-profile.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Profile</figcaption>
+                        </figure>
 
-                  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                      <a href="/img/12u12-login.jpg" itemprop="contentUrl" data-size="400x450">
-                          <img src="/img/12u12-login.jpg" itemprop="thumbnail" alt="Image description" />
-                      </a>
-                      <figcaption itemprop="caption description">Login Page</figcaption>
-                  </figure>
-              
-                  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="/img/12u12-signup.jpg" itemprop="contentUrl" data-size="400x680">
-                        <img src="/img/12u12-signup.jpg" itemprop="thumbnail" alt="Image description" />
-                    </a>
-                    <figcaption itemprop="caption description">Signup Page</figcaption>
-                  </figure>
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/portfolio/12u12-update-profile.jpg" itemprop="contentUrl" data-size="400x450">
+                                <img src="img/portfolio/12u12-update-profile.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Update Profile</figcaption>
+                        </figure>
 
-                  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="/img/12u12-forgot-password.jpg" itemprop="contentUrl" data-size="400x300">
-                        <img src="/img/12u12-forgot-password.jpg" itemprop="thumbnail" alt="Image description" />
-                    </a>
-                    <figcaption itemprop="caption description">Forgot Password</figcaption>
-                  </figure>
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/portfolio/12u12-add-subuser.jpg" itemprop="contentUrl" data-size="400x450">
+                                <img src="img/portfolio/12u12-add-subuser.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Add Subuser</figcaption>
+                        </figure>
 
-                  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="/img/12u12-profile.jpg" itemprop="contentUrl" data-size="400x450">
-                        <img src="/img/12u12-profile.jpg" itemprop="thumbnail" alt="Image description" />
-                    </a>
-                    <figcaption itemprop="caption description">Profile</figcaption>
-                  </figure>
+                    </div>
+                    <div class="clear-both" />
+                </li>
 
-                  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="/img/12u12-update-profile.jpg" itemprop="contentUrl" data-size="400x450">
-                        <img src="/img/12u12-update-profile.jpg" itemprop="thumbnail" alt="Image description" />
-                    </a>
-                    <figcaption itemprop="caption description">Update Profile</figcaption>
-                  </figure>
+                <li class="relative mb-14 pl-10">
+                    <i class="absolute -left-2 w-4 h-4 rounded-lg bg-green-200"></i>
+                    <p class="block text-sm text-gray-600 font-bold mt-4">Website/wordpress development done at U-Digital &amp; Magnetic Netherland (2016-2017)</p>
+                    <p class="block text-sm text-gray-600 mt-2">This is projects i build when working for U-Digital &amp; Magnetic Netherland</p>
+                    <p>
+                        <a id="showudigital" href="javascript:;" class="text-blue-600 text-sm">Show/Hide Gallery</a>
+                    </p>
+                    <div id="udigital-gallery" class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/portfolio/udigital-ctouch.jpg" itemprop="contentUrl" data-size="1200x850">
+                                <img src="img/portfolio/udigital-ctouch.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description"><a href="https://ctouch.eu" target="_blank">Ctouch</a>, is company that make big screen monitor.
+                                The website is contain information mainly for products of ctouch
+                            </figcaption>
+                        </figure>
 
-                  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="/img/12u12-add-subuser.jpg" itemprop="contentUrl" data-size="400x450">
-                        <img src="/img/12u12-add-subuser.jpg" itemprop="thumbnail" alt="Image description" />
-                    </a>
-                    <figcaption itemprop="caption description">Add Subuser</figcaption>
-                  </figure>
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/portfolio/udigital-argosbe.jpg" itemprop="contentUrl" data-size="1200x850">
+                                <img src="img/portfolio/udigital-argosbe.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description"><a href="https://argosenergies.be" target="_blank">Argos Belgium</a>, the company for Gas distribution.
+                                This website contain product and distributor information website</figcaption>
+                        </figure>
 
-                </div>
-            </li>
-            <li class="clearfix">
-              <h3 class="title">Website/wordpress development done at U-Digital &amp; Magnetic Netherland (2016-2017)</h3>
-              <p>
-                This is projects i build when working for U-Digital &amp; Magnetic Netherland
-              </p>
-              <p>
-                Click the gallery
-                <a id="showudigital" href="javascript:;">Show/Hide Gallery</a>
-              </p>
-              <div id="udigital-gallery" class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/portfolio/udigital-argosnl.jpg" itemprop="contentUrl" data-size="1200x850">
+                                <img src="img/portfolio/udigital-argosnl.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description"><a href="https://argos.nl" target="_blank">Argos Netherland</a>, the company for Gas distribution.
+                                This website contain product and station information website</figcaption>
+                        </figure>
+                    </div>
+                    <div class="clear-both" />
+                </li>
 
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="/img/udigital-ctouch.jpg" itemprop="contentUrl" data-size="1200x850">
-                        <img src="/img/udigital-ctouch.jpg" itemprop="thumbnail" alt="Image description" />
-                    </a>
-                    <figcaption itemprop="caption description"><a href="https://ctouch.eu" target="_blank">Ctouch</a>, is company that make big screen monitor.
-                      The website is contain information mainly for products of ctouch
-                    </figcaption>
-                </figure>
+                <li class="relative mb-14 pl-10">
+                    <i class="absolute -left-2 w-4 h-4 rounded-lg bg-green-200"></i>
+                    <p class="block text-sm text-gray-600 font-bold mt-4">Topcoder Project : Wordpress development (2010-2016)</p>
+                    <p class="block text-sm text-gray-600 mt-2">I had working about 50 project with placement at topcoder at Wordpress/Website contest at Topcoder</p>
+                    <p class="block text-sm text-gray-600 mt-2"><a target="_blank" class="text-blue-600" href="https://www.topcoder.com/members/evilkyro1965/details/?track=DEVELOP&subTrack=UI_PROTOTYPE_COMPETITION&tab=challenges">Profiles Link</a></p>
+                </li>
 
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                  <a href="/img/udigital-argosbe.jpg" itemprop="contentUrl" data-size="1200x850">
-                      <img src="/img/udigital-argosbe.jpg" itemprop="thumbnail" alt="Image description" />
-                  </a>
-                  <figcaption itemprop="caption description"><a href="https://argosenergies.be" target="_blank">Argos Belgium</a>, the company for Gas distribution. 
-                    This website contain product and distributor information website</figcaption>
-                </figure>
+                <li class="relative mb-14 pl-10">
+                    <i class="absolute -left-2 w-4 h-4 rounded-lg bg-green-200"></i>
+                    <p class="block text-sm text-gray-600 font-bold mt-4">Telkom OSASE Project (2009)</p>
+                    <p class="block text-sm text-gray-600 mt-2">The project i develop for Telkom, indonesian telecommunication company. The project are
+                        to gather sensor information in each site to center server. It's to make company more easy
+                        to know how the site condition e.g: temperature, electricity status. So if bad condition happen, the engineer can fix the problem faster. And company can get information which problem that often happen.</p>
+                </li>
 
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                  <a href="/img/udigital-argosnl.jpg" itemprop="contentUrl" data-size="1200x850">
-                      <img src="/img/udigital-argosnl.jpg" itemprop="thumbnail" alt="Image description" />
-                  </a>
-                  <figcaption itemprop="caption description"><a href="https://argos.nl" target="_blank">Argos Netherland</a>, the company for Gas distribution. 
-                    This website contain product and station information website</figcaption>
-                </figure>
+                <li class="relative mb-14 pl-10">
+                    <i class="absolute -left-2 w-4 h-4 rounded-lg bg-green-200"></i>
+                    <p class="block text-sm text-gray-600 font-bold mt-4">Bank Sumut ATM Reconciliation tools (2009)</p>
+                    <p class="block text-sm text-gray-600 mt-2">The project i develop for Bank Sumut. The application help employee to compare the data
+                        of ATM from the vendor data with their internal data. It help the company know if there
+                        not match data between vendor and internal data.</p>
+                </li>
 
-              </div>
-            </li> 
-            <li>
-                <h3 class="title">Topcoder Project : Wordpress development (2010-2016)</h3>
-                <p>I had working about 50 project with placement at topcoder at Wordpress/Website contest at Topcoder</p>
-                <p><a target="_blank" href="https://www.topcoder.com/members/evilkyro1965/details/?track=DEVELOP&subTrack=UI_PROTOTYPE_COMPETITION&tab=challenges">Profiles Link</a></p>
-            </li>           
-            <li>
-              <h3 class="title">Telkom OSASE Project (2009)</h3>
-              <p>The project i develop for Telkom, indonesian telecommunication company. The project are 
-              to gather sensor information in each site to center server. It's to make company more easy
-            to know how the site condition e.g: temperature, electricity status. So if bad condition happen, the engineer can fix the problem faster. And company can get information which problem that often happen.</p>
-            </li>
-            <li>
-              <h3 class="title">Bank Sumut ATM Reconciliation tools (2009)</h3>
-              <p>
-                The project i develop for Bank Sumut. The application help employee to compare the data
-                of ATM from the vendor data with their internal data. It help the company know if there
-                not match data between vendor and internal data.
-              </p>
-            </li>
-          </ul>
+            </ul>
 
         </div>
-      </div>
+
     </div>
 
     <!-- Root element of PhotoSwipe. Must have class pswp. -->
     <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
-        <!-- Background of PhotoSwipe. 
+        <!-- Background of PhotoSwipe.
             It's a separate element as animating opacity is faster than rgba(). -->
         <div class="pswp__bg"></div>
 
         <!-- Slides wrapper with overflow:hidden. -->
         <div class="pswp__scroll-wrap">
 
-            <!-- Container that holds slides. 
+            <!-- Container that holds slides.
                 PhotoSwipe keeps only 3 of them in the DOM to save memory.
                 Don't modify these 3 pswp__item elements, data is added later on. -->
             <div class="pswp__container">
@@ -263,15 +205,15 @@
                     <!-- element will get class pswp__preloader--active when preloader is running -->
                     <div class="pswp__preloader">
                         <div class="pswp__preloader__icn">
-                          <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                          </div>
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div> 
+                    <div class="pswp__share-tooltip"></div>
                 </div>
 
                 <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
@@ -290,17 +232,11 @@
 
     </div>
 
-    <iframe src="https://damp-ocean-57051.herokuapp.com/" style="display: none"></iframe>
-    <iframe src="https://floating-wave-74338.herokuapp.com/" style="display: none"></iframe>
-    <iframe src="https://protected-beach-59360.herokuapp.com/" style="display: none"></iframe>
-    <iframe src="https://protected-ridge-34041.herokuapp.com/" style="display: none"></iframe>
-
     <script src="js/jquery.js"></script>
+    <script src="js/photoswipe.min.js"></script>
+    <script src="js/photoswipe-ui-default.min.js"></script>
     <script src="js/initPhotoSwipeFromDOM.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/what-input.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script src="js/photoswipe.min.js"></script>
-    <script src="js/photoswipe-ui-default.min.js"></script> 
-  </body>
+
+</body>
 </html>
